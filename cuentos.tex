@@ -1,0 +1,56 @@
+\documentclass[12pt,twoside,a5paper]{amsbook}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{epsfig,exscale}
+\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+ 
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[includeheadfoot,
+top=20mm,
+left=30mm=,
+right=20mm,
+bottom=15mm
+]{geometry}
+
+\renewcommand{\chaptername}{}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\contentsname}{Índice}
+\newcommand{\dlg}{\noindent $\bullet$ }
+
+\hypersetup{
+pdftitle={Cuentos para ir a dormir},
+pdfsubject={cuentos},
+pdfauthor={Ariel Narváez},
+pdfkeywords={cuentos}
+}
+
+\title[Cuentos]{CUENTOS PARA IR A DORMIR} 
+\author[Ariel Narváez]{Ariel Narváez}
+
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\chapter{EL COCODRILO Y LAS HORMIGAS}
+\input{cocodrilo.tex}
+
+\chapter{EL LIBRO BENJAMIN}
+%\input{benjamin.tex}
+
+\chapter{LAS HORMIGAS Y EL TOPO}
+\input{hormigas.tex}
+
+\chapter{EL MENSAJE}
+
+\chapter{EL TOPO Y EL MONO}
+
+\chapter{LA MANZANA}
+\input{manzana.tex}
+
+\end{document}
+
