@@ -1,4 +1,4 @@
-\documentclass[12pt,twoside,a5paper]{amsbook}
+\documentclass[12pt,twoside,a5paper]{scrbook}
 
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{epsfig,exscale}
@@ -8,6 +8,8 @@
 \usepackage{setspace}
 \onehalfspacing
 
+\date{}
+
 \usepackage[includeheadfoot,
 top=20mm,
 left=30mm=,
@@ -15,26 +17,29 @@ right=20mm,
 bottom=15mm
 ]{geometry}
 
-\usepackage{titlesec}
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\scshape}
+\setlength{\cftchapnumwidth}{6ex}
 
 \renewcommand{\chaptername}{}
 \renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\contentsname}{Índice}
 
+\usepackage{titlesec}
 \titleformat{\chapter}[frame]{\normalfont\LARGE\bfseries}
-{\ \thechapter\ }{2.0ex}{\LARGE\sc}
+{\ \thechapter\ }{2.0ex}{\huge\sffamily}
 
-\newcommand{\dlg}{\noindent $\bullet$ }
+\newcommand{\dlg}{\noindent -- }
 
-\usepackage{contour}
-\contourlength{0pt} %how thick each copy is
-\contournumber{1}  %number of copies
+%\usepackage{contour}
+%\contourlength{0pt} %how thick each copy is
+%\contournumber{1}  %number of copies
 
-\newcommand{\fL}[1]{
-\noindent
-\contour{black}{\bfseries \Huge \textcolor{white}{#1}}
-\hspace{-1.5ex}
-}
+%\newcommand{\fL}[1]{
+%\noindent
+%\contour{black}{\bfseries \Huge \textcolor{white}{#1}}
+%\hspace{-1.5ex}
+%}
 
 \hypersetup{
 pdftitle={Cuentos para ir a dormir},
@@ -43,17 +48,28 @@ pdfauthor={Ariel Narváez},
 pdfkeywords={cuentos, Emma, Írisz}
 }
 
-\title[Cuentos]{CUENTOS PARA IR A DORMIR} 
-\author[Ariel Narváez]{Ariel Narváez}
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+ \lehead{}
+ \cehead{\leftmark} 
+ \cohead{Cuentos para ir a Dormir} 
+\setheadsepline{.4pt}
+
+\title{Cuentos para ir a Dormir}
+\author{Ariel Narváez}
 
 \begin{document}
 \maketitle
 
+\thispagestyle{empty}
 \hfill ...a Emma e Írisz
+\newpage
 
+\setcounter{page}{1}
 \tableofcontents
+\addtocontents{toc}{~\hfill Página \par}
 
-\chapter[El Cocodrilo y las Hormigas]{El Cocodrilo y las \\ Hormigas}
+\chapter[El Cocodrilo y las Hormigas]{El Cocodrilo y las \\Hormigas}
 \input{cocodrilo.tex}
 
 \chapter{El Libro Benjamin}
