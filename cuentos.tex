@@ -19,15 +19,17 @@ bottom=15mm
 
 \usepackage{tocloft}
 \renewcommand{\cftchapfont}{\scshape}
-\setlength{\cftchapnumwidth}{6ex}
+%\setlength{\cftchapnumwidth}{6.0ex}
+\setlength{\cftchapnumwidth}{0.0ex}
 
 \renewcommand{\chaptername}{}
-\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thechapter}{}
 \renewcommand{\contentsname}{Índice}
 
 \usepackage{titlesec}
-\titleformat{\chapter}[frame]{\normalfont\LARGE\bfseries}
-{\ \thechapter\ }{2.0ex}{\huge\sffamily}
+\titleformat{\chapter}[frame]{\huge}
+{}{1ex}{\bfseries\huge\sffamily}
 
 \newcommand{\dlg}{\noindent -- }
 
@@ -48,11 +50,15 @@ pdfauthor={Ariel Narváez},
 pdfkeywords={cuentos, Emma, Írisz}
 }
 
+\let\oldtitle\title
+\renewcommand{\title}[1]{\oldtitle{#1}\def\titletext{#1}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
 \usepackage{scrpage2}
 \pagestyle{scrheadings}
  \lehead{}
- \cehead{\leftmark} 
- \cohead{Cuentos para ir a Dormir} 
+ \cehead{ \leftmark } 
+ \cohead{ \titletext } 
 \setheadsepline{.4pt}
 
 \title{Cuentos para ir a Dormir}
@@ -63,6 +69,9 @@ pdfkeywords={cuentos, Emma, Írisz}
 
 \thispagestyle{empty}
 \hfill ...a Emma e Írisz
+\newpage
+\thispagestyle{empty}
+~\vfill
 \newpage
 
 \setcounter{page}{1}
