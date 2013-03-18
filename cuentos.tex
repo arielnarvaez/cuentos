@@ -19,11 +19,9 @@ bottom=15mm
 
 \usepackage{tocloft}
 \renewcommand{\cftchapfont}{\scshape}
-%\setlength{\cftchapnumwidth}{6.0ex}
 \setlength{\cftchapnumwidth}{0.0ex}
 
 \renewcommand{\chaptername}{}
-%\renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thechapter}{}
 \renewcommand{\contentsname}{Índice}
 
@@ -33,15 +31,14 @@ bottom=15mm
 
 \newcommand{\dlg}{\noindent -- }
 
-%\usepackage{contour}
-%\contourlength{0pt} %how thick each copy is
-%\contournumber{1}  %number of copies
 
-%\newcommand{\fL}[1]{
-%\noindent
-%\contour{black}{\bfseries \Huge \textcolor{white}{#1}}
-%\hspace{-1.5ex}
-%}
+\newcommand{\fgr}[1]
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{pics/#1}
+\end{center}
+}
+
 
 \hypersetup{
 pdftitle={Cuentos para ir a dormir},
