@@ -11,7 +11,7 @@
 \date{}
 
 \usepackage[includeheadfoot,
-top=15mm,
+top=20mm,
 left=30mm=,
 right=20mm,
 bottom=15mm
@@ -77,7 +77,11 @@ pdfkeywords={cuentos, Emma, Írisz}
 \newpage
 
 \setcounter{page}{1}
-\tableofcontents
+\begin{spacing}{1.0}
+  \tableofcontents
+\end{spacing}
+%\tableofcontents
+
 \addtocontents{toc}{~\hfill Página \par}
 
 \chapter*{Prólogo}
