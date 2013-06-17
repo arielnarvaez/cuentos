@@ -1,4 +1,4 @@
-\documentclass[12pt,twoside,a5paper]{scrbook}
+\documentclass[12pt,twoside,a5paper,sffamily]{scrbook}
 
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{epsfig,exscale}
@@ -7,8 +7,6 @@
  
 \usepackage{setspace}
 \onehalfspacing
-
-\date{}
 
 \usepackage[includeheadfoot,
 top=20mm,
@@ -27,10 +25,9 @@ bottom=15mm
 
 \usepackage{titlesec}
 \titleformat{\chapter}[frame]{\huge}
-{}{1ex}{\bfseries\huge\sffamily}
+{}{1ex}{\bfseries\huge}
 
 \newcommand{\dlg}{\noindent -- }
-
 
 \newcommand{\fgr}[1]
 {
@@ -38,7 +35,6 @@ bottom=15mm
 \includegraphics[width=0.75\textwidth]{pics/#1}
 \end{center}
 }
-
 
 \hypersetup{
 pdftitle={cuentos para ir a dormir},
@@ -54,8 +50,8 @@ pdfkeywords={cuentos, Emma, Írisz}
 \usepackage{scrpage2}
 \pagestyle{scrheadings}
  \lehead{}
- \cehead{ \leftmark } 
- \cohead{ \titletext } 
+ \cehead{ \sffamily \leftmark } 
+ \cohead{ \sffamily \titletext } 
 \setheadsepline{.4pt}
 
 \title{Cuentos para ir a Dormir}
@@ -63,6 +59,7 @@ pdfkeywords={cuentos, Emma, Írisz}
 \date{Ilustraciones: Luis Narváez}
 
 \begin{document}
+\sffamily
 \maketitle
 
 \thispagestyle{empty}
@@ -85,17 +82,7 @@ pdfkeywords={cuentos, Emma, Írisz}
 \addtocontents{toc}{~\hfill Página \par}
 
 \chapter*{Prólogo}
-Este libro tiene por objetivo recopilar los mejores cuentos que
-invente durante estos años haciendo dormir a mis hijas Írisz y Emma.
-Todos éstos a excepción de ''El Libro Benjamin'', que nació primero
-como una historieta dibujdas con Írisz, fueron inventados luego que
-mis hijas eligieran los personajes (animales), para luego yo hacerme
-cargo de la trama. Los cuentos aquí presentes fueron los más pedidos
-por mi pequeño público.
-
-Una vez iniciado el proyecto y ante la necesidad de ilustrar cada
-cuento, le pedí al abuelo, Luis Narváez, que se hicera cargo de las
-ilustraciones, lo cual él acepto gustoso.
+\input{prologo.tex}
 
 \chapter[El Cocodrilo y las Hormigas]{El Cocodrilo y las \\Hormigas}
 \input{cocodrilo.tex}
