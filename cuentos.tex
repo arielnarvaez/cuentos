@@ -64,6 +64,24 @@ pdfkeywords={cuentos, Emma, Írisz}
 
 \input{hyphenation.tex}
 
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\hspace{\marginparwidth}
+%\centering
+\includegraphics[
+%width=\paperwidth,height=\paperheight,
+width=1.1\textwidth,height=0.9\paperheight,
+%keepaspectratio
+]{background.png}
+\vfill
+}
+}
+}
+
+
 \begin{document}
 \sffamily
 \maketitle
@@ -79,6 +97,7 @@ Mayo 2014
 ~\vfill
 \newpage
 
+\AddToShipoutPicture{\BackgroundPic}
 \setcounter{page}{1}
 \begin{spacing}{1.5}
   \tableofcontents
@@ -86,7 +105,7 @@ Mayo 2014
 
 \addtocontents{toc}{~\hfill Página \par}
 
-\chapter*{Prólogo}
+\chapter{Prólogo}
 \input{prologo.tex}
 
 \chapter[El Cocodrilo y las Hormigas]{El Cocodrilo y las \\Hormigas}
