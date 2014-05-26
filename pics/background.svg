@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   inkscape:export-filename="/home/np/Documents/toechter/cuentos/pics2/background.png"
+   inkscape:export-filename="/home/np/Documents/toechter/cuentos/pics/background.png"
    inkscape:export-xdpi="360"
    inkscape:export-ydpi="360"
    sodipodi:docname="background.svg">
@@ -65,16 +65,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="118.56374"
-     inkscape:cy="382.04494"
+     inkscape:zoom="1.979899"
+     inkscape:cx="229.03015"
+     inkscape:cy="1034.4475"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1357"
-     inkscape:window-height="958"
-     inkscape:window-x="137"
-     inkscape:window-y="134"
+     inkscape:window-width="1558"
+     inkscape:window-height="984"
+     inkscape:window-x="354"
+     inkscape:window-y="43"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -89,23 +89,78 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="b"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-308.26769)">
+     transform="translate(0,-308.26769)"
+     sodipodi:insensitive="true">
     <rect
-       style="opacity:0.4;fill:#ff70ff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="opacity:0.4;fill:#ee81ee;fill-opacity:0.42473127;fill-rule:evenodd;stroke:none"
        id="rect3055"
        width="438"
        height="20.203091"
        x="42.5"
        y="1018.0576" />
-    <rect
-       style="opacity:0.4;fill:url(#linearGradient3081);fill-opacity:1;fill-rule:evenodd;stroke:none"
-       id="rect3055-5"
-       width="438"
-       height="49.497513"
-       x="42.5"
-       y="347.27567" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer">
+    <image
+       width="38.612312"
+       height="30.284166"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/cocodrilo_bar.png"
+       id="image3855"
+       x="43.500076"
+       y="701.67828" />
+    <image
+       width="58.339893"
+       height="31.706469"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/bombero_bar.png"
+       id="image3950"
+       x="279.22971"
+       y="701.26361" />
+    <image
+       width="27.469517"
+       height="29.582556"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/Benjamin_bar.png"
+       id="image4029"
+       x="451.18796"
+       y="704.18451" />
+    <image
+       width="53.282227"
+       height="30.446987"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/hormigas_bar.png"
+       id="image4108"
+       x="150.32498"
+       y="703.94189" />
+    <image
+       width="34.38192"
+       height="27.505535"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/chancho_bar.png"
+       id="image4187"
+       x="400.67398"
+       y="705.39087" />
+    <image
+       width="38.430439"
+       height="37.80043"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/dinosaurio_bar.png"
+       id="image4266"
+       x="224.12285"
+       y="697.69238" />
+    <image
+       width="18.723738"
+       height="33.219532"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/grillo_violin_bar.png"
+       id="image4345"
+       x="104.17008"
+       y="700.16168" />
+    <image
+       width="31.808426"
+       height="34.724197"
+       xlink:href="file:///home/np/Documents/toechter/cuentos/pics/manzana_bar.png"
+       id="image4424"
+       x="351.67386"
+       y="697.61896" />
   </g>
 </svg>
